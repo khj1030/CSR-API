@@ -50,6 +50,8 @@
                 // Blob 데이터에 접근할 수 있는 주소를 생성한다.
                 const blobURL = window.URL.createObjectURL(blob);
 
+                console.log(blobURL);
+
                 // audio엘리먼트로 재생한다.
                 $audioEl.src = blobURL;
                 $audioEl.play();
